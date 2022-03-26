@@ -1,4 +1,4 @@
-#  Function prints the numbers from start to num without using loops.
+#  Function prints numbers from "start" to "stop" without using loops.
 
 
 def print_num(start, stop):
@@ -12,5 +12,4 @@ def print_num(start, stop):
 stop = int(input("Enter stop number: "))
 start = int(input("Enter start number: "))
 print_num(start, num)
-
 
