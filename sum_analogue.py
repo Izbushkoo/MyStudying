@@ -2,7 +2,9 @@
 #  and unlimited quantity of numbers.
 
 def unpack(item, lst=[]):
+    
     #  Unpack the list of lists into one by means of recursion.
+    
     if isinstance(item, (int, float)):
         return item
 
@@ -17,6 +19,7 @@ def sum(*args):
 
     #  Function gets the sum if argument is a list or any kind of numbers
     #  or print error message.
+    
     summ = 0
     for object in args:
         if isinstance(object, list):
