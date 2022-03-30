@@ -1,6 +1,6 @@
 def product_site(product):
 
-    # Here we have an example data-structure where we want to change some part in into different one.
+    # Here we have an example data-structure in where we want to change some part into different one.
     # So we use string format method.
 
     site = {
