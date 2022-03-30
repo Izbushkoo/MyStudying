@@ -15,7 +15,7 @@ def new_list_2(lst_2):
 
     # this thing was peeked on google =) I got the general idea
     # but first option for me is more instinctively understandable.
-    # and this version is almost two time faster then mine =))
+    # and this version is almost two time faster than mine =))
 
     if lst_2 == []:
         return lst_2
