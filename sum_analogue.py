@@ -1,18 +1,16 @@
 #  It is the analog of sum.function that can summarize list of lists and
 #  and unlimited quantity of numbers.
 
-def unpack(item, lst=[]):
+def unpack(object):
     
     #  Unpack the list of lists into one by means of recursion.
     
-    if isinstance(item, (int, float)):
-        return item
+    if object == []:
+        return object
 
-    for elem in item:
-        if isinstance(unpack(elem), (int, float)):
-            lst.append(unpack(elem))
-
-    return lst
+    if isinstance(object[0], list):
+        return unpack(object[0}) + unpack(object[1:])
+    return object[:1] + unpack(object[1:})
 
 
 def sum(*args):
