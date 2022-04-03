@@ -11,28 +11,30 @@ def find_path(item):
                 return path_to
 
 
-file = open(find_path('group_1.txt'), 'r')
+file = open(find_path('group_1.txt'), 'r', encoding='utf-8')
 
 # make a list of the first group scores
 
 score_lst = []
 for i_line in file:
     score_lst.append(int(i_line.split()[2]))
-    
+file.close()  
+
 # find the score difference
 
 difference = score_lst[0]
 for item in score_lst[1:]:
     difference -= item
 
-file_2 = open(find_path('group_2.txt'), 'r')
+file_2 = open(find_path('group_2.txt'), 'r', encoding='utf-8')
 
 # find the result of multiplying of the second group scores
 
 result = 1
 for i_line in file_2:
     result *= int(i_line.split()[2])
-    
+file_2.close()     
+
 # print summ, difference and result
 
 print('Sum of scores of the first group:', sum(score_lst))
